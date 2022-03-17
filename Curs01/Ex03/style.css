@@ -1,0 +1,19 @@
+picture {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+picture img {
+  width: 100%;
+}
+
+@media (min-width: 993px) {
+  picture {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* CTRL+SHIFT+R Clear cache ca sa validam a 6 a cerinta  */
+/* art direction */
