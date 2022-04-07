@@ -1,0 +1,55 @@
+@keyframes bar-04 {
+  25% {
+    background-color: red;
+    width: 100%;
+  }
+
+  50% {
+    background-color: blue;
+    width: 50%;
+  }
+  /* la urmatoare comanda de css v-a ramane acelasi width */
+  75% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: orange;
+    width: 1%;
+  }
+}
+
+/* comanda sa pornim animatia */
+.bar-04 {
+  animation: bar-04 5s ease-out;
+}
+
+@keyframes bar-05 {
+  0% {
+    background-color: green;
+    width: 100%;
+  }
+
+  33.3% {
+    background: red;
+    width: 500px;
+  }
+
+  66.6% {
+    background-color: green;
+    width: 75%;
+  }
+
+  /* noi am pus sa se duca in orange la 100% dar se intoarce la 05
+   green test forwards dupa linear */
+  100% {
+    background-color: orange;
+    width: 500px;
+  }
+}
+
+.bar-05 {
+  animation: bar-05 8s linear forwards;
+}
+
+/* forwards ramane la ultimul keyframe */
