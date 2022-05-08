@@ -11,7 +11,20 @@
 }
 
 @for $i from 1 through 5 {
- .box-#{$i} {
-   border-width: #{$i}px
- }
+  .box-#{$i} {
+    border-width: #{$i}px;
+  }
+}
+
+@for $i from 1 through 5 {
+  .box-0#{$i} {
+    width: 150px + #{$i * 5}px;
+    height: 150px + #{$i * 5}px;
+  }
+}
+
+@for $i from 1 through 5 {
+  .box-#{$i}0 {
+    background-color: gray;
+  }
 }

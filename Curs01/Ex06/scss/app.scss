@@ -37,4 +37,27 @@
 .circles {
   width: 75%;
   border: 2px dotted;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  border: 3px solid red;
+  border-radius: 50%;
+  @include circle-bg(purple);
+}
+
+.circle-red {
+  @include circle-bg(red);
+}
+.circle-green {
+  @include circle-bg(green);
+}
+.circle-blue {
+  @include circle-bg(blue);
+}
+.circle-border-blue {
+  border-color: blue;
 }
