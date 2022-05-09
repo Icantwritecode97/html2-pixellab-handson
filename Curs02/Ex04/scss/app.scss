@@ -12,19 +12,23 @@
 
 @for $i from 1 through 5 {
   .box-#{$i} {
-    border-width: #{$i}px;
+    border: #{$i}px solid black;
   }
 }
 
 @for $i from 1 through 5 {
-  .box-0#{$i} {
-    width: 150px + #{$i * 5}px;
-    height: 150px + #{$i * 5}px;
+  .box-0#{$i + 1} {
+    height: calc(150px + calc(#{$i} * 5px));
+    width: calc(150px + calc(#{$i} * 5px));
   }
 }
 
 @for $i from 1 through 5 {
-  .box-#{$i}0 {
-    background-color: gray;
+  .box-#{$i*10} {
+    @if $i % 2 == 1 {
+      background-color: gray;
+    } @else {
+      background-color: transparent;
+    }
   }
 }

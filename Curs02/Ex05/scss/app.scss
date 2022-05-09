@@ -15,7 +15,13 @@
     @if $i % 2 == 0 {
       background-color: gray;
     } @else {
-      border: 2px dotted red;
+      border: 2px dotted lawngreen;
     }
+  }
+}
+
+@for $i from 1 through 9 {
+  .box-0#{$i} {
+    border: #{$i}px solid #000;
   }
 }
