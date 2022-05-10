@@ -23,20 +23,16 @@
 <body>
   <section class="container mb-4">
     <header class="px-2">
-      <h1>Align using flexbox</h1>
+      <h1>Aliniate folosind flexbox</h1>
     </header>
+
     <section>
-      <article class="container border border-dark py-2 d-flex flex-column gap-2">
-        <!--  -->
-        <!-- 2 vine de la un coeficient inmultit cu 16 nu este pixel :D  -->
-        <!-- randurile in bootstrap sunt automat flex -->
-        <!-- gap-ul merge doar intre randuri nu il pune mai sus sau mai jos :D -->
-        <!-- ./ -->
+      <article class="border border-dark container py-2 d-flex flex-column gap-2">
         <div class="row justify-content-between">
           <div class="col-4 bg-secondary border border-dark py-3"></div>
           <div class="col-4 bg-secondary border border-dark py-3"></div>
         </div>
-        <div class="row justify-content-center my-2">
+        <div class="row justify-content-center">
           <div class="col-4 bg-secondary border border-dark py-3"></div>
         </div>
         <div class="row justify-content-between">
@@ -44,19 +40,43 @@
           <div class="col-4 bg-secondary border border-dark py-3"></div>
         </div>
       </article>
-      <article class="container border border-dark mt-4">
-        Add code here
+
+      <article class="container border border-dark mt-4 py-2 d-flex flex-column gap-2">
+        <div class="row justify-content-center">
+          <div class="col-4 bg-secondary border border-dark py-3"></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4 bg-secondary border border-dark py-3"></div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-4 bg-secondary border border-dark py-3"></div>
+        </div>
       </article>
+
     </section>
   </section>
+
   <section class="container">
     <header class="px-2">
-      <h1>Aligned using offset</h1>
+      <h1>Aliniate folosind offset</h1>
     </header>
     <section>
-      <article class="container border border-dark">
-        Add code here
+      <article class="container border border-dark mt-4 py-2 d-flex flex-column gap-2">
+        <div class="row">
+          <div class="col-4 bg-secondary border border-dark py-3"></div>
+          <div class="col-4 offset-4 bg-secondary border border-dark py-3"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-4 offset-4 bg-secondary border border-dark py-3"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-4 bg-secondary border border-dark py-3"></div>
+          <div class="col-4 offset-4 bg-secondary border border-dark py-3"></div>
+        </div>
       </article>
+
       <article class="container border border-dark mt-4 py-2 d-flex flex-column gap-2">
         <div class="row">
           <div class="col-4 offset-4 bg-secondary border border-dark py-3"></div>
@@ -70,6 +90,7 @@
       </article>
     </section>
   </section>
+
 </body>
 
 </html>

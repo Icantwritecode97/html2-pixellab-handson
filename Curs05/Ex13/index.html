@@ -71,22 +71,54 @@
                 placeholder="Descriere lunga *"
               ></textarea>
             </div>
-          </div>
 
-          <div class="col-12 col-lg-6 d-flex flex-column gap-2 mt-2 mt-lg-0">
-            <div>
+            <div class="input-group">
               <label
-                for="recipe-image"
-                class="form-label"
-              >Imagine principala *</label>
-              <input
-                type="file"
-                name="recipe-image"
-                id="recipe-image"
+                for="receipe-short-description"
+                class="input-group-text"
+              ></label>
+              <textarea
+                name="receipe-short-description"
+                id="receipe-short-description"
+                cols="30"
+                rows="4"
                 class="form-control"
-              >
+                required
+                placeholder="descriere scurta* "
+              ></textarea>
             </div>
-          </div>
+
+            <div class="col-12 col-lg-6 d-flex flex-column gap-2 mt-2 mt-lg-0">
+              <div>
+                <label
+                  for="recipe-image"
+                  class="form-label"
+                >Imagine principala *</label>
+                <input
+                  type="file"
+                  name="recipe-image"
+                  id="recipe-image"
+                  class="form-control"
+                >
+              </div>
+
+              <div class="input-group mt-5">
+                <label
+                  for="product-category"
+                  class="input-group-text"
+                >author*</label>
+                <select
+                  name="product-category"
+                  id="product-category"
+                  class="form-select"
+                  required
+                >
+                  <option value="/">author 1</option>
+                  <option value="/">author 2</option>
+                  <option value="/">author 3</option>
+                </select>
+              </div>
+            </div>
         </section>
       </fieldset>
 
@@ -127,6 +159,32 @@
               >
             </div>
           </div>
+
+          <div class="input-group">
+            <label
+              for="author-surname"
+              id="author-surname"
+              class="form-control"
+              placeholder="Prenume autor"
+              required
+            >
+            </label>
+          </div>
+          <div class="input-group">
+            <label
+              for="author-email"
+              class="input-group-text"
+            >Email*</label>
+            <input
+              type="Email"
+              name="author-email"
+              id="author-email"
+              class="form-control"
+              placeholder="Email"
+              required
+            >
+          </div>
+
 
           <div class="col-12 col-lg-6 mt-2 mt-lg-0">
             <div class="input-group">
@@ -180,7 +238,7 @@
           <div class="col-12 col-lg-6 mt-2 mt-lg-0">
             <h3>Lista de ingrediente</h3>
 
-            <ul>
+            <ul class="d-flex gap-2">
               <li>
                 10g ulei
                 <button
@@ -188,13 +246,41 @@
                   title="Editeaza"
                   class="btn btn-primary btn-sm"
                 >Editeaza</button>
-
                 <button
                   type="button"
                   title="Sterge"
                   class="btn btn-danger btn-sm"
                 >Sterge</button>
               </li>
+
+              <li>
+                200g ceapa
+                <button
+                  type="button"
+                  title="Editeaza"
+                  class="btn btn-primary btn-sm"
+                >Editeaza</button>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  title="Sterge"
+                >Sterge</button>
+              </li>
+
+              <li>
+                200g ardei
+                <button
+                  type="button"
+                  title="Editeaza"
+                  class="btn btn-primary btn-sm"
+                >Editeaza</button>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  title="Sterge"
+                >Sterge</button>
+              </li>
+
             </ul>
           </div>
         </section>
@@ -223,12 +309,48 @@
               >
             </div>
 
+            <div class="input-group">
+              <label
+                for="subtitle"
+                class="input-group-text"
+              >subtitlu*</label>
+              <input
+                type="text"
+                name="subtitle"
+                id="subtitle"
+                class="form-control"
+                placeholder="Subtitlu"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="description"
+                class="input-group-text"
+              >Descriere*</label>
+              <textarea
+                name="description"
+                id="description"
+                cols="30"
+                rows="6"
+                class="form control"
+                placeholder="descriere"
+                required
+              ></textarea>
+            </div>
+
             <div class="text-end">
               <button
                 type="button"
                 class="btn btn-outline-danger"
                 title="Reseteaza"
               >Reseteaza</button>
+              <button
+                type="submit"
+                title="adauga"
+                class="btn btn-primary"
+              >Adauga</button>
             </div>
           </div>
         </section>
