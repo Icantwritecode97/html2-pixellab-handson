@@ -42,31 +42,70 @@
 }
 /* do not touch this */
 
-.flex-container-02 {
-  align-items: flex-start;
+.flex-container-01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-/* nth of type 3 pentru ca functia nth numara toate divurile
-inclusiv divul cu overlay */
-.flex-container-02 .flex-item:nth-of-type(3) {
+.flex-container-01 > .flex-item:nth-child(2) {
   flex-grow: 1;
 }
 
-.flex-container-02 .flex-item:last-of-type {
+.flex-container-02 {
+  display: flex;
+}
+
+.flex-container-02 > .flex-item:nth-child(3) {
+  flex-grow: 1;
+}
+
+.flex-container-02 > .flex-item:nth-child(5) {
   flex-grow: 2;
 }
 
-.flex-container-05 {
+.flex-container-03 {
+  display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
 }
 
-.flex-container-05 :nth-child(3) {
+.flex-container-03 > .flex-item:nth-child(2) {
   flex-grow: 1;
 }
-/*  + inseamna elementul de imediat langa deci pt
-css este 3 pentru ca il ia si pe primul underlay */
-.flex-container-05 :nth-child(3) + div {
+
+.flex-container-03 > .flex-item:nth-child(4) {
   flex-grow: 2;
 }
 
+.flex-container-04 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
 
+.flex-container-04 > .flex-item:nth-child(5) {
+  flex-grow: 1;
+}
+
+.flex-container-05 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.flex-container-05 .flex-item:nth-child(3) {
+  flex-grow: 1;
+}
+
+.flex-container-05 .flex-item:nth-child(4) {
+  flex-grow: 2;
+}
+
+.flex-container-06 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-container-06 .flex-item:nth-child(4) {
+  flex-grow: 1;
+}
