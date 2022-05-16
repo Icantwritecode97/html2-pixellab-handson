@@ -48,8 +48,38 @@ body {
 }
 /* do not touch this */
 
+.flex-container-01 {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.flex-container-02 {
+  align-content: space-between;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+.flex-container-03 {
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: flex-end;
+}
+
 .flex-container-04 {
   flex-wrap: wrap;
   align-content: flex-end;
   justify-content: flex-start;
+}
+
+.flex-container-05 {
+  align-content: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-container-06 {
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }

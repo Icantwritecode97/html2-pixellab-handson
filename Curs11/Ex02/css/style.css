@@ -3,11 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px double green;
+  margin: 15px;
+  padding: 15px;
 }
 /* can't touch this 🔨 */
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 120px 20% 2fr;
-  grid-template-rows: 200px;
+  grid-template-rows: 25px 200px;
 }

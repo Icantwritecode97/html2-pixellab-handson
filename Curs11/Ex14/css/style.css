@@ -27,10 +27,11 @@
   display: grid;
   max-width: 1920px;
   width: 100%;
+  margin: 0 auto;
   grid-template-areas:
     'header'
     'content'
-    'sideba r'
+    'sidebar'
     'footer';
 }
 
@@ -48,6 +49,16 @@
 
 .grid-item-4 {
   grid-area: footer;
+}
+
+@media (min-width: 521px) {
+  .grid-container {
+    grid-template-areas:
+      'header'
+      'sidebar'
+      'content'
+      'footer';
+  }
 }
 
 @media (min-width: 769px) {

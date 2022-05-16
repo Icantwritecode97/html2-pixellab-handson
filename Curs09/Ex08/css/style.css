@@ -56,13 +56,22 @@ pe axa principala  */
 /* flex basis este ideal deoarece daca nu are loc la marimea ideala
 v-a face resize  */
 
+.flex-container-01 {
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.flex-container-01 div:nth-child(2) {
+  flex-shrink: 2;
+}
+
 .flex-container-02 {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
 }
 
-.flex-container-02 :nth-child(2) {
+.flex-container-02 div:nth-child(2) {
   flex-shrink: 2;
 }
 
@@ -74,6 +83,32 @@ containerul 02 este fix ca un path */
 }
 /* daca avem flex shrink sau grow tot timpul incepe de la 1  */
 
+.flex-container-03 {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex-container-03 div:nth-child(3) {
+  flex-shrink: 2;
+}
+.flex-container-03 div:nth-child(5) {
+  flex-shrink: 3;
+}
+
+.flex-container-04 {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex-container-04 div:nth-child(4) {
+  flex-shrink: 2;
+}
+
+.flex-container-04 div:nth-child(3) {
+  flex-shrink: 3;
+}
+
 .flex-container-05 {
   justify-content: center;
   align-items: flex-start;
@@ -81,4 +116,22 @@ containerul 02 este fix ca un path */
 
 .flex-container-05 :nth-of-type(2) {
   flex-shrink: 2;
+}
+
+.flex-container-06 {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.flex-container-06 .flex-item:nth-child(3) {
+  flex: shrink 3;
+}
+
+.flex-container-06 .flex-item:nth-child(5) {
+  flex-shrink: 0;
+}
+
+.flex-container-06 .flex-item:nth-child(2) {
+  flex-shrink: 3;
 }

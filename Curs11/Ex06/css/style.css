@@ -43,3 +43,8 @@
   grid-row-start: 3;
   grid-row-end: span 1;
 }
+
+.grid-item-4 {
+  grid-column: 5 / span 1;
+  grid-row: 3 / span 1;
+}
